@@ -21,8 +21,8 @@ public class FillingUpLongForm {
 
             // Waiting Form appear
             WebDriverWait wait = new WebDriverWait(appiumDriver, 10L);
-            //wait.until(ExpectedConditions.
-                    //visibilityOfElementLocated(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"Form components\")")));
+            wait.until(ExpectedConditions.
+                    visibilityOfElementLocated(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"Form components\")")));
 
             // Find elements
             MobileElement inputFieldText = appiumDriver.findElement(MobileBy.AccessibilityId("text-input"));
