@@ -1,0 +1,48 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,10 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4fd334e6-2d0e-4c3d-8d42-671a6a5022c2" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/NarrowDownSearchingScope.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2022_6_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2022_6_23_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_7_2022_9_37_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_7_2022_9_37_AM__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/src/api_learning/FillingUpLongForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/FillingUpLongForm.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/src/api_learning/SwipeHorizontal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/SwipeHorizontal.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -45,7 +43,7 @@
+     &quot;last_opened_file_path&quot;: &quot;C:/Users/hoanhtt/IdeaProjects/Appium_K11_MB&quot;
+   }
+ }</component>
+-  <component name="RunManager" selected="Application.FillingUpLongForm">
++  <component name="RunManager" selected="Application.NarrowDownSearchingScope">
+     <configuration name="AppiumLaunchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="src.AppiumLaunchTest" />
+       <module name="appium-k11-mb" />
+@@ -87,7 +85,7 @@
+     </configuration>
+     <configuration name="NarrowDownSearchingScope" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="src.api_learning.NarrowDownSearchingScope" />
+-      <module name="Appium_K11_MB" />
++      <module name="appium-k11-mb" />
+       <extension name="coverage">
+         <pattern>
+           <option name="PATTERN" value="src.api_learning.*" />
+@@ -113,8 +111,8 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.FillingUpLongForm" />
+         <item itemvalue="Application.NarrowDownSearchingScope" />
++        <item itemvalue="Application.FillingUpLongForm" />
+         <item itemvalue="Application.SwipeHorizontal" />
+         <item itemvalue="Application.LoginFormTest" />
+         <item itemvalue="Application.AppiumLaunchTest" />

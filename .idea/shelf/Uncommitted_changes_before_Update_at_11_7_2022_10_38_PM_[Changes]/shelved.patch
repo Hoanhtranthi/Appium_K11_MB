@@ -1,0 +1,19 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,9 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4fd334e6-2d0e-4c3d-8d42-671a6a5022c2" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/SwipeHorizontal.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/src/api_learning/FillingUpLongForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/FillingUpLongForm.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/src/api_learning/SwipeHorizontal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/api_learning/SwipeHorizontal.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />

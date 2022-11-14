@@ -1,0 +1,36 @@
+Index: src/test/java/src/api_learning/SwipeHorizontal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/src/api_learning/SwipeHorizontal.java b/src/test/java/src/api_learning/SwipeHorizontal.java
+--- a/src/test/java/src/api_learning/SwipeHorizontal.java	
++++ b/src/test/java/src/api_learning/SwipeHorizontal.java	
+@@ -22,7 +22,7 @@
+             MobileElement navBtnSwipe = appiumDriver.findElement(MobileBy.AccessibilityId("Swipe"));
+             navBtnSwipe.click();
+             // Wait Swipe screen
+-            WebDriverWait wait = new WebDriverWait(appiumDriver, 10L);
++            WebDriverWait wait = new WebDriverWait(appiumDriver, 5L);
+             wait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"Swipe horizontal\")")));
+             //Get window screen
+             Dimension windowSize = appiumDriver.manage().window().getSize();
+@@ -32,8 +32,8 @@
+             // Calculate Touch point
+             int xStartPoint = 90 * screenWidth / 100;
+             int xEndPoint = 10 * screenWidth / 100;
+-            int yStartPoint = 95 * screenWidth / 100;
+-            int yEndPoint = 95 * screenWidth / 100;
++            int yStartPoint = 90 * screenWidth / 100;
++            int yEndPoint = 90 * screenWidth / 100;
+ 
+             // Convert to coordinate
+             PointOption startPoint = new PointOption<>().withCoordinates(xStartPoint, yStartPoint);
+@@ -54,7 +54,6 @@
+                         .moveTo(endPoint)
+                         .release()
+                         .perform();
+-
+             }
+ 
+         }

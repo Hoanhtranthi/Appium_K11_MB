@@ -22,7 +22,7 @@ public class SwipeHorizontal {
             MobileElement navBtnSwipe = appiumDriver.findElement(MobileBy.AccessibilityId("Swipe"));
             navBtnSwipe.click();
             // Wait Swipe screen
-            WebDriverWait wait = new WebDriverWait(appiumDriver, 10L);
+            WebDriverWait wait = new WebDriverWait(appiumDriver, 5L);
             wait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"Swipe horizontal\")")));
             //Get window screen
             Dimension windowSize = appiumDriver.manage().window().getSize();
@@ -32,8 +32,8 @@ public class SwipeHorizontal {
             // Calculate Touch point
             int xStartPoint = 90 * screenWidth / 100;
             int xEndPoint = 10 * screenWidth / 100;
-            int yStartPoint = 95 * screenWidth / 100;
-            int yEndPoint = 95 * screenWidth / 100;
+            int yStartPoint = 90 * screenWidth / 100;
+            int yEndPoint = 90 * screenWidth / 100;
 
             // Convert to coordinate
             PointOption startPoint = new PointOption<>().withCoordinates(xStartPoint, yStartPoint);
@@ -54,7 +54,6 @@ public class SwipeHorizontal {
                         .moveTo(endPoint)
                         .release()
                         .perform();
-
             }
 
         }
