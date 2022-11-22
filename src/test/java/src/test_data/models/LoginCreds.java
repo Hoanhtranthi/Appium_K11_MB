@@ -26,5 +26,11 @@ public class LoginCreds {
         return password;
     }
 
-
+    @Override
+    public String toString() {
+        return "LoginCreds{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

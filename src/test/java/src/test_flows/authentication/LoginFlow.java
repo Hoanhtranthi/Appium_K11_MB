@@ -3,6 +3,7 @@ package src.test_flows.authentication;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.apache.commons.validator.routines.EmailValidator;
+import org.testng.Assert;
 import src.models.components.login.LoginFormComponent03;
 import src.models.pages.LoginScreenMod03;
 import src.test_flows.BaseFlow;
@@ -57,22 +58,19 @@ public class LoginFlow extends BaseFlow{
         String actualInvalidEmailTxt = loginFormComp.invalidEmailTxt();
         String expectedInvalidEmailTxt = "Please enter a valid email address";
 
-        System.out.println("actualInvalidEmailTxt " + actualInvalidEmailTxt);
-        System.out.println("expectedInvalidEmailTxt " + expectedInvalidEmailTxt);
+        Assert.assertEquals(actualInvalidEmailTxt,expectedInvalidEmailTxt, "[ERR] Actual Invalid Email Text is not correct!");
     }
 
     private void verifyInCorrectPasswordLogin(LoginFormComponent03 loginFormComp) {
         String actualInvalidPasswordTxt = loginFormComp.invalidPasswordTxt();
         String expectedInvalidPasswordTxt = "Please enter at least 8 characters";
 
-        System.out.println("actualInvalidEmailTxt " + actualInvalidPasswordTxt);
-        System.out.println("expectedInvalidEmailTxt " + expectedInvalidPasswordTxt);
+        Assert.assertEquals(actualInvalidPasswordTxt,expectedInvalidPasswordTxt, "[ERR] Actual Invalid Password Text is not correct!");
     }
     private void verifyCorrectLoginCreds(LoginFormComponent03 loginFormComp) {
         String actualAlertLoginSuccessTxt = loginFormComp.alertLoginSuccessTxtSel();
         String expectedAlertLoginSuccess = "Success";
 
-        System.out.println("actualAlertLoginSuccessTxt " + actualAlertLoginSuccessTxt);
-        System.out.println("expectedAlertLoginSuccess " + expectedAlertLoginSuccess);
+        Assert.assertEquals(actualAlertLoginSuccessTxt,expectedAlertLoginSuccess, "[ERR] Login unsuccessful!");
     }
 }
